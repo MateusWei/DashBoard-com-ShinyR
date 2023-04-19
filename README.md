@@ -34,6 +34,7 @@ library(ggplot2)
 library(tibbletime)
 ```
 ## Estrutura interface
+![image](https://user-images.githubusercontent.com/51674914/232953415-270ce818-2ff4-4882-9089-3c0b94d76ead.png)
 >O projeto tem como estrutura 4 paineis superiores, onde em cada painel teremos suas respectivas informações como a tabela lateral e a tabela principal
 
 ```r
@@ -69,7 +70,7 @@ tabPanel("Intervalo de Confiança",
 tabPanel("Regressão", plotOutput('reg'))
 ```
 ## Criação do mapa
-
+![image](https://user-images.githubusercontent.com/51674914/232953605-1eee3253-b658-4182-8b5b-1a4f732e27df.png)
 > No painel do mapa é plotado um mapa contendo os pontos que indicam a localização do corredor, como a planilha com as informações contem as localizações do corredor durante vários horários, a representação da sua localização no mapa vai ficar parecendo um trajeto que ele fez
 ```r
 # recebendo os dados da planilha
@@ -112,7 +113,7 @@ tabPanel("Regressão", plotOutput('reg'))
   })
 ```
 ## Intervalo de Confiança
-
+![image](https://user-images.githubusercontent.com/51674914/232953750-3cd2b04c-fc01-4951-8885-9a901a786b54.png)
 >No painel de  intervalo de intervalo de confiança, vamos ter uma função para calcular o IC da velocidade do corredor durante o tempo estimado: '2023-03-23 18:45:18'~'2023-03-23 18:49:23'
 ```r
 intervaloInput = reactive({
@@ -143,6 +144,7 @@ intervaloInput = reactive({
   })
 ```
 ## Regressão
+![image](https://user-images.githubusercontent.com/51674914/232953787-85c3cdb4-d6ce-4ba8-b27a-2db7a8ded0c7.png)
 > Na tabela de regressão temos a representação da reta que mais se aproxima dos pontos do banco de dados `cars` e os coeficientes de correlação e determinação.
 ```r
 #Fazendo a regressão linear
@@ -168,7 +170,7 @@ intervaloInput = reactive({
   })
 ```
 ## Testes de hipóteses
-
+![image](https://user-images.githubusercontent.com/51674914/232953688-8f62ceda-9d83-4106-9563-d3c02fcdc1fe.png)
 > Aqui temos a representação do teste de hipoteses para os dados filtrados nos seguintes horários: '2023-03-23 18:40:53'~'2023-03-23 18:45:12'
 ```r
 # Selecionar dados da caminhada
